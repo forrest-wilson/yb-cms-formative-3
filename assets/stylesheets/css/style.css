@@ -30,4 +30,32 @@
 .hero-subtitle {
   font-size: 26px; }
 
+.animal hr {
+  width: 100% !important; }
+
+.animal-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.animal-thumbnail {
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+  .animal-thumbnail img {
+    width: 250px; }
+
+.animal-info {
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+  .animal-info p:not(:last-of-type) {
+    margin-bottom: 0; }
+
+.widget-area {
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px; }
+
 /*# sourceMappingURL=style.css.map */
