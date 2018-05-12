@@ -11,7 +11,7 @@
 <main class="container">
     <div class="row">
         <div class="col-sm-12 col-md-8">
-            <?php if (have_posts()) : the_post() ?>
+            <?php if (have_posts()) : the_post(); ?>
                 <?php the_content(); ?>
             <?php endif; ?>
         </div>
