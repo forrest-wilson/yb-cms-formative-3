@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACC,4BAA2B;EAC3B,iBAAgB;EAChB,mBAAkB,EAClB","file":"style.css","sourcesContent":[".feature-image {\n\tbackground-color: lightgray;\n\tpadding: 150px 0;\n\ttext-align: center;\n}"]}
