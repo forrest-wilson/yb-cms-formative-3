@@ -44,7 +44,7 @@ if ( ! function_exists( 'humane_society_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'humane-society' ),
+			'primary' => esc_html__( 'Primary', 'humane-society' ),
 		) );
 
 		/*
@@ -134,6 +134,7 @@ function humane_society_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css', array(), '4.4.1' );
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/node_modules/jquery/dist/jquery.min.js', array(), '3.3.1', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js', array(), '4.4.1', true );
+	wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/stylesheets/css/style.css', array(), '1.0.0' );
 }
 add_action( 'wp_enqueue_scripts', 'humane_society_scripts' );
 
@@ -164,3 +165,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
