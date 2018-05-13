@@ -8,7 +8,7 @@
 
 <main class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-8 col-lg-9">
             <h1>Cats Available for Adoption</h1>
 
             <?php $loop = new WP_Query(array("post_type" => "cat_adoption", "order_by" => "post_id", "order" => "ASC")); ?>
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 col-lg-3">
             <?php get_sidebar(); ?>
         </div>
     </div>
