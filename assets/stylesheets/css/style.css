@@ -1,6 +1,6 @@
 .feature-image {
   background-color: #003667;
-  padding: 150px 0;
+  padding: 50px 0;
   margin-bottom: 1rem;
   text-align: center;
   background-size: cover;
@@ -44,7 +44,7 @@
   -ms-flex-negative: 0;
   flex-shrink: 0; }
   .animal-thumbnail img {
-    width: 250px; }
+    width: 175px; }
 
 .animal-info {
   display: inline-block;
@@ -57,6 +57,47 @@
 .widget-area {
   padding: 10px;
   border: 1px solid lightgrey;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 1rem; }
+
+blockquote {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.menu,
+.sub-menu {
+  margin-left: 0;
+  padding-left: 1.8rem; }
+
+.search-form .search-field,
+.search-form .search-submit,
+.search-form label {
+  width: 100%; }
+
+.navbar-brand .animal-sketch {
+  display: none; }
+
+.navbar-brand .name {
+  width: 200px; }
+
+@media screen and (min-width: 576px) {
+  .navbar-brand .animal-sketch {
+    display: inline; }
+  .navbar-brand .name {
+    width: auto; } }
+
+@media screen and (min-width: 768px) {
+  .feature-image {
+    padding: 80px 0; } }
+
+@media screen and (min-width: 992px) {
+  .feature-image {
+    padding: 150px 0; }
+  .animal-thumbnail img {
+    width: 250px; } }
 
 /*# sourceMappingURL=style.css.map */

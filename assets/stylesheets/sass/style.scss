@@ -1,6 +1,8 @@
+$greyBorder: 1px solid lightgrey;
+
 .feature-image {
 	background-color: #003667;
-    padding: 150px 0;
+    padding: 50px 0;
     margin-bottom: 1rem;
     text-align: center;
     background-size: cover;
@@ -51,7 +53,7 @@
     flex-shrink: 0;
 
     img {
-        width: 250px;
+        width: 175px;
     }
 }
 
@@ -66,6 +68,70 @@
 
 .widget-area {
     padding: 10px;
-    border: 1px solid lightgrey;
+    border: $greyBorder;
     border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    border-top: $greyBorder;
+    border-bottom: $greyBorder;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu,
+.sub-menu {
+    margin-left: 0;
+    padding-left: 1.8rem;
+}
+
+.search-form {
+    .search-field,
+    .search-submit,
+    label {
+        width: 100%;
+    }
+}
+
+.navbar-brand {
+    .animal-sketch {
+        display: none;
+    }
+
+    .name {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .navbar-brand {
+        .animal-sketch {
+            display: inline;
+        }
+
+        .name {
+            width: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .feature-image {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .feature-image {
+        padding: 150px 0;
+    }
+    
+    .animal-thumbnail {
+        img {
+            width: 250px;
+        }
+    }
 }
