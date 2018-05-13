@@ -18,7 +18,7 @@
             <div class="content">
                 <h1 class="hero-title"><?php the_title(); ?></h1>
                 <?php if (have_posts()) : the_post() ?>
-                    <h2 class="hero-subtitle"><?php the_content(); ?></h2>
+                    <h2 class="hero-subtitle"><?php echo $hero_text; ?></h2>
                 <?php endif; ?>
             </div>
         </div>
