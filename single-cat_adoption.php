@@ -18,7 +18,6 @@
                         $donation = get_field("donation");
                         $good_with_other_pets = get_field("good_with_other_pets");
                         $good_with_kids = get_field("good_with_kids");
-                        $description = get_field("description");
 					?>
 
 					<div class="col-sm-12 col-md-8 col-lg-9">
@@ -44,7 +43,7 @@
 								<p><strong>Good with kids: </strong><?php echo $good_with_kids; ?></p>
 							</div>
 						</div>
-						<div><?php echo $description; ?></div>
+						<div><?php the_content(); ?></div>
 					</div>
 				<?php endif; ?>
 				<div class="col-sm-12 col-md-4 col-lg-3">
