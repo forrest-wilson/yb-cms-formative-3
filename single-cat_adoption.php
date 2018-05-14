@@ -22,6 +22,9 @@
 					?>
 
 					<div class="col-sm-12 col-md-8 col-lg-9">
+						<div class="animal-title">
+							<h1 style="display: inline-block;"><?php echo $name; ?></h1><span> - <?php echo $location; ?></span>
+						</div>
 						<div class="animal-post">
 							<div class="animal-thumbnail">
 								<?php if (has_post_thumbnail()) { ?>
@@ -31,8 +34,6 @@
 								<?php } ?>
 							</div>
 							<div class="animal-info">
-								<p><strong>Name: </strong><?php echo $name; ?></p>
-								<p><strong>Location: </strong><?php echo $location; ?></p>
 								<p><strong>Status: </strong><?php echo $status; ?></p>
 								<p><strong>Age: </strong><?php echo $age; ?></p>
 								<p><strong>Sex: </strong><?php echo $sex; ?></p>

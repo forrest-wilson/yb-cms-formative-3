@@ -52,6 +52,10 @@ $greyBorder: 1px solid lightgrey;
     display: flex;
 }
 
+.animal-title > *{
+    vertical-align: middle;
+}
+
 .animal-thumbnail {
     margin-right: 10px;
     flex-shrink: 0;
