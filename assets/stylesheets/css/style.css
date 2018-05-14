@@ -104,6 +104,8 @@ blockquote {
   .feature-image {
     padding: 150px 0; }
   .animal-thumbnail img {
-    width: 250px; } }
+    width: 250px; }
+  .wpforms-container {
+    max-width: 400px; } }
 
 /*# sourceMappingURL=style.css.map */
