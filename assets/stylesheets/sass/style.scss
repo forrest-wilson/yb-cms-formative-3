@@ -1,7 +1,9 @@
 $greyBorder: 1px solid lightgrey;
+$blueColor: rgb(1, 66, 130);
 
 .site-main > .container {
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .feature-image {
@@ -79,6 +81,8 @@ $greyBorder: 1px solid lightgrey;
     border: $greyBorder;
     border-radius: 5px;
     margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 blockquote {
@@ -111,6 +115,19 @@ blockquote {
 
     .name {
         width: 200px;
+    }
+}
+
+.btn-primary {
+    background-color: $blueColor;
+    border-color: $blueColor;
+}
+
+.white-link {
+    color: white;
+
+    &:hover {
+        color: white;
     }
 }
 
