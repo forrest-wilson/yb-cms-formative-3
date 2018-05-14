@@ -1,6 +1,6 @@
 <?php
     /*
-        Template Name: Adoption Template
+        Template Name: Dog Adoption Template
     */
 
     get_header();
@@ -9,9 +9,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-9">
-                <h1>Cats Available for Adoption</h1>
+                <?php
+                    $loop = new WP_Query(array("post_type" => "dog_adoptions", "order_by" => "post_id", "order" => "ASC"));
+                ?>
 
-                <?php $loop = new WP_Query(array("post_type" => "cat_adoption", "order_by" => "post_id", "order" => "ASC")); ?>
+                <h1><?php echo $post->post_title; ?></h1>
                 
                 <div class="row animal">
 
