@@ -33,7 +33,7 @@
                                 <?php if (has_post_thumbnail()) { ?>
                                     <?php the_post_thumbnail(); ?>
                                 <?php } else { ?>
-                                    <img src="" alt="">
+                                    <img src="<?php echo bloginfo("stylesheet_directory") . "/assets/img/no-image.jpg"; ?>" alt="No Image">
                                 <?php } ?>
                             </div>
                             <div class="animal-info">
